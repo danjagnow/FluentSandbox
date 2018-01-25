@@ -27,7 +27,7 @@ namespace FluentSandbox
             };
 
             var result = JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
-            result.ShouldBeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult);
         }
 
         [Fact]
@@ -45,7 +45,7 @@ namespace FluentSandbox
             };
 
             var result = JsonConvert.DeserializeObject<Dictionary<string, object>>(json);
-            result.ShouldBeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult);
         }
     }
 }
